@@ -1,0 +1,78 @@
+#bubble-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: auto;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.3rem 1.5rem 1.2rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--white)), to(var(--trans-white)));
+    background: linear-gradient(var(--white), var(--trans-white));
+    z-index: 8888;
+    border-radius: 0 0 40px 40px;
+    -webkit-box-shadow: 0px 5px 18px var(--trans-dark);
+            box-shadow: 0px 5px 18px var(--trans-dark);
+}
+
+.bubble{
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--white);
+    padding: 3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.65)), to(rgba(0,0,0,0.33)));
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.33));
+    border-radius: 50%;
+    margin: 0.4rem;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 0px 5px 8px var(--trans-dark);
+            box-shadow: 0px 5px 8px var(--trans-dark);
+    cursor: pointer;
+}
+
+.bubble:hover{
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-box-shadow: 0px 3px 8px var(--trans-dark);
+            box-shadow: 0px 3px 8px var(--trans-dark);
+}
+
+.bubble-inner{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--white)), color-stop(var(--white)), to(#ddd));
+    background: linear-gradient(var(--white), var(--white), #ddd);
+    border-radius: 50%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.bubble.active{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.85)), to(rgba(0,0,0,0.33)));
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.33));
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.bubble.active .bubble-inner{
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-light)), color-stop(var(--accent)), to(var(--accent)));
+    background: linear-gradient(var(--accent-light), var(--accent), var(--accent));
+    border: 1px solid var(--accent-light);
+}

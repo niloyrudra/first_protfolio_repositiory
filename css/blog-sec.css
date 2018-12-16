@@ -1,0 +1,165 @@
+/*  BLOG SECTION    */
+
+.blog{
+    position: relative;
+    background: rgba(0,0,0,0.4);
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 12px rgba(255,255,255,0.4);
+            box-shadow: 0px 0px 12px rgba(255,255,255,0.4);
+}
+
+.blog:last-child{
+    margin-top: 1em;
+}
+
+.blog .meta-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index:1;
+}
+.meta-box .year,
+.meta-box .month,
+.meta-box .date{
+    position: relative;
+    display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#fff), to(#ddd));
+    background: linear-gradient(#fff, #fff, #ddd);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 8px 15px rgba(0,0,0,0.25);
+            box-shadow: 0px 8px 15px rgba(0,0,0,0.25);
+}
+
+.meta-box .year::before,
+.meta-box .month::before,
+.meta-box .date::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: -webkit-gradient(linear,left top, left bottom,from(#ddd),color-stop(#fff), to(#fff));
+    background: linear-gradient(#ddd,#fff, #fff);
+    z-index: -1;
+}
+
+.meta-box .date a,
+.meta-box .month a,
+.meta-box .year a{
+    text-decoration: none;
+    color: var(--accent);
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.meta-box .date a:hover,
+.meta-box .month a:hover,
+.meta-box .year a:hover{
+    text-shadow: 0px 3px 5px rgba(0,0,0,0);
+}
+
+.meta-box .date{
+    width: 100px;
+    height: 100px;
+    z-index:3;
+    border-radius: 50%;
+}
+.meta-box .date a{
+    font-size: 2.2em;
+}
+.meta-box .date::before{
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    top: 12px;
+    left: 12px;
+    border-radius: 50%;
+}
+
+.meta-box .month{
+    width: 87px;
+    height: 74px;
+    z-index:2;
+    margin-left: -17px;
+    border-radius: 0 50% 50% 0;
+}
+.meta-box .month a{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.meta-box .month::before{
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    top: 9px;
+    left: 9px;    
+    border-radius: 0 50% 50% 0;
+}
+
+.meta-box .year{
+    width: 80px;
+    height: 60px;
+    z-index:1;
+    margin-left: -17px;
+    border-radius: 0 50% 50% 0;
+}
+.meta-box .year a{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.meta-box .year::before{
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    top: 7px;
+    left: 7px;
+    border-radius: 0 50% 50% 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3.blog-title{
+    margin-top: 1.5rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1;
+    margin-bottom: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+a:hover h3.blog-title{
+    color: rgba(255,255,255,0.95);
+    font-size: 75%;
+}
+
+p.blog-content{
+    font-size: 75%;
+}
+
+a.blog-para-perma{
+    color: #ffff00;
+    font-size: 90%;
+    text-decoration: none;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+a.blog-para-perma:hover{
+    font-size: 80%;
+    -webkit-text-decoration: #ffff00;
+            text-decoration: #ffff00;
+}

@@ -1,0 +1,244 @@
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: -3;
+    overflow: hidden;
+}
+
+nav.nav-bottom{
+    position: relative;
+    width: 100%;
+    padding: 3em 1em;
+    color: var(--white);
+    overflow: hidden;
+}
+
+ul.bottom-ul{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+ul.bottom-ul,
+li.bottom-li ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li.bottom-li{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+    border-bottom: 1px solid var(--trans-white);
+}
+
+li.bottom-li:last-child{
+    border-bottom: none;
+}
+
+li.bottom-li strong{
+    display: block;
+    color: var(--trans-white);
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+li.bottom-li ul li{
+    list-style: none;
+    width: 100%;
+}
+
+li.bottom-li ul li a{
+    display: block;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+li.bottom-li p{
+    font-size: 80%;
+    color: var(--trans-white);
+}
+
+
+.newsletter > p{
+    margin-top: 0;
+}
+
+span.strong{
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.bottom-signup-area{
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+input[id="bottom-singup"]{
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 5px 0 0 5px;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    background-color: var(--white);
+    outline: none;
+    color: var(--dark);
+}
+
+button{
+    border: 1px solid var(--primary);
+    border-radius: 0 5px 5px 0;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    outline: none;
+    color: var(--white);
+}
+
+
+
+
+/*  MEDIA QUERY  */
+@media screen and (min-width: 768px) {
+    nav.nav-bottom{
+        width: 100%;
+        max-width: 25em;
+        margin: 0 auto;
+    }
+
+    .bottom-signup-area{
+        grid-template-columns: 75% 25%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    nav.nav-bottom{
+        max-width: 40em;
+        padding: 3em 1em;
+    }
+
+    ul.bottom-ul{
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .bottom-signup-area{
+        grid-template-columns: 75% 25%;
+    }
+
+    li.bottom-li{
+        border-bottom: none;
+    }
+    
+    .bottom-signup-area{
+        grid-template-columns: 70% 30%;
+    }
+
+}
+
+@media screen and (max-height: 740px) {
+    nav.nav-bottom{
+        padding: 1em 1em;
+    }
+
+    li.bottom-li{
+        margin: 0.5em 0;
+    }
+
+    li.bottom-li strong{
+        display: block;
+        color: var(--trans-white);
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    li.bottom-li ul li a{
+        display: block;
+        color: var(--primary);
+        margin-bottom: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    li.bottom-li p{
+        font-size: 70%;
+    }
+    
+    span.strong{
+        font-size: 1.1rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-height: 580px) {
+    nav.nav-bottom{
+        padding: 1em 1em;
+    }
+
+    li.bottom-li{
+        margin: 0.5em 0;
+    }
+
+    li.bottom-li strong{
+        margin-bottom: 0.5em;
+        font-size: 18px;
+    }
+
+    li.bottom-li ul li a{
+        margin-bottom: 0.7rem;
+        letter-spacing: 1px;
+        font-size: 75%;
+    }
+
+    li.bottom-li p{
+        font-size: 70%;
+    }
+    
+    span.strong{
+        font-size: 1.1rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}

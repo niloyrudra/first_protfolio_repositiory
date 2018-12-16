@@ -1,0 +1,118 @@
+.intro{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(2em, 1fr) minmax(auto, 30em) minmax(2em, 1fr);
+    z-index: 7;
+}
+
+.left-img,
+.right-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-img::before,
+.right-img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,0,0.5);
+    z-index: 333;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.left-img img,
+.right-img img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.intro-section{
+    position: relative;
+    padding: 1em;
+    background-color: var(--dark);
+    color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.intro-section h2{
+    text-align: center;
+    opacity: 0;
+}
+
+.intro-section h2::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 30%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--trans-white);
+    margin: 1em auto;
+}
+
+.intro-section p{
+    margin-top: 0;
+    text-align: center;
+    font-size: 17px;
+    opacity: 0;
+}
+
+
+/*  HOVER EFFECT    */
+.left-img:hover::before,
+.right-img:hover::before{
+    background-color: rgba(255,255,0,0.4);
+}
+
+.left-img:hover img,
+.right-img:hover img{
+    -webkit-transform: scale(1.05) rotate(3deg);
+            transform: scale(1.05) rotate(3deg);
+}
+
+
+/*  MEDIA QUERY */
+@media screen and (max-width: 420px) {
+    .intro-section h2{
+        opacity: 1;
+    }
+    .intro-section p{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .intro-section{
+        padding: 2em;
+    }
+    
+}

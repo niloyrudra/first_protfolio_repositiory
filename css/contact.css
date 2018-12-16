@@ -1,0 +1,133 @@
+.contact,
+.contact-form{
+    position: relative;
+    width: 100%;
+}
+
+.contact{
+    -webkit-box-shadow: 0px 6px 15px rgba(255,255,255,0.4);
+            box-shadow: 0px 6px 15px rgba(255,255,255,0.4);
+}
+
+.contact-form{
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 3em 1em;
+}
+
+.contact-form form{
+    position: relative;
+    width: 100%;
+    -webkit-display: grid;
+    -o-display: grid;
+    -ms-display: grid;
+    -moz-display: grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+    'name'
+    'email'
+    'msg'
+    'btn';
+    overflow: hidden;
+}
+
+.contact > label{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+span{
+    display: block;
+    color: var(--trans-white);
+    font-size: 75%;
+    line-height: 1;
+}
+
+input[name='name'],
+input[name='email'],
+textarea[name='message']{
+    position: relative;
+    display: block;
+    border: none;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.4rem;
+    color: #ffff00;
+    border-radius: 4px;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+input[name='name']:focus,
+input[name='email']:focus,
+textarea[name='message']:focus{
+    background-color: rgba(255,255,255,0.7);
+    outline: none;
+}
+
+input[name='name']{
+    grid-area: name;
+}
+
+input[name='email']{
+    grid-area: email;
+}
+
+label[for="message"]{
+    grid-area: msg;
+}
+
+.gr_ver_2{
+    display: none;
+}
+
+input[type='submit']{
+    grid-area: btn;
+    border: none;
+    -webkit-display: grid;
+    -o-display: grid;
+    -ms-display: grid;
+    -moz-display: grid;
+    display: grid;
+    justify-self: right;
+    width: auto;
+    padding: 0.8rem 1.6rem;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 1rem;
+    text-shadow: 0px 3px 5px var(--trans-dark);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type='submit']:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--light-primary)), to(var(--primary)));
+    background: linear-gradient(var(--light-primary), var(--primary));
+    text-shadow: 0px 3px 5px rgba(0,0,0,0);
+}
+
+
+
+/*  MEDIA QUERY  */
+@media screen and (min-width: 1024px){
+    .contact{
+        -webkit-box-shadow: 0px 10px 25px rgba(255,255,255,0.4);
+                box-shadow: 0px 10px 25px rgba(255,255,255,0.4);
+    }
+
+    .contact-form form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        'name email'
+        'msg msg'
+        ' . btn';
+    }
+
+}

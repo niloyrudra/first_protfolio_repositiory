@@ -1,0 +1,62 @@
+@import "mob-menu.css";
+@import "header.css";
+@import "main.css";
+@import "showcase.css";
+@import "intro.css";
+@import "about-me.css";
+@import "portfolio.css";
+@import "service.css";
+@import "project.css";
+@import "blog.css";
+@import "blog-sec.css";
+@import "subs-sec.css";
+@import "contact.css";
+@import "footer.css";
+@import "bubble.css";
+@import "keyframs.css";
+@import "search-overlay.css";
+
+
+:root{
+    --accent: #03afc2;
+    --accent-light: #33e4f8;
+    --primary: #3cbbf8;
+    --light-primary: #80d6fd;
+    --white: #ffffff;
+    --light-gray: #a7a7a7;
+    --dark: #262626;
+    --trans-dark: rgba(0,0,0,0.5);
+    --trans-white: rgba(255,255,255,0.8);
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+img{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
