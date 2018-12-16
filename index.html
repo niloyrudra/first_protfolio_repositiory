@@ -1,11 +1,466 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
 
-  <head></head>
-  
-  <body>
-  
-    <h1>Demo Text</h1>
-  
-  </body> 
-  
-</html
+    <div class="mobile-menu" data-status="off"><span></span></div>    <!--    MOBILE MENU    -->
+    <div class="search-overlay">
+        <div class="search-overlay__container">
+            <div class="search-top__area">
+                <span class="search-icon__right">&#8981;</span>
+                <input type="search" name="search-area" id="search-area">
+                <span class="director-icon">&#10140;</span>
+                <span class="close-icon" id="search-trigger__close">&#10006;</span>
+            </div>
+            <div class="search-body__area">
+                <div class="search-body__area__container"></div>
+            </div>
+        </div>
+    </div>    <!--    SEARCH OVERLAY    -->
+    
+    <header id="header" class="header close">
+        <div class="header-content">
+            <a href="#top"><div class="logo"><img src="img/logo-1.png" alt="logo"></div></a>
+            
+            <nav class="nav-top">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio-top">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div id="search-trigger__open" class="search-icon">&#8981;</div>
+        </div>
+    </header>   <!--    HEADER ENDS     -->
+
+    <main id="main-container">
+
+        <section id="top" class="showcase">
+            <div class="showcase-img" style="background-image: url(img/showcase.jpeg);"></div>
+
+            <div class="showcase-content">
+                <h1>Welcome <span>to</span></h1>
+                <div class="tag-logo">
+                    <div class="first-part"><img src="img/logo-img.png" alt=""></div>
+                    <div class="second-part"><img src="img/logo-text.png" alt=""></div>
+                </div>
+                <h4>Your invisible online helping hand!</h4>
+                <div class="btn-div">
+                    <a href="#" class="btn-top btn-fill">Find More</a>
+                    <a href="#" class="btn-top btn-trans">Visit Blogs</a>
+                </div>
+                
+            </div>
+            
+        </section> <!--   SHOWCASE SECTION ENDS   -->
+        
+        <section class="intro">
+
+            <div class="left-img"><img src="img/bookcase-books-bookshelves-256541.jpg" alt=""></div>
+            <div class="intro-section">
+                <h2>MAKING & SHARING</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt, asperiores culpa veniam expedita quo, qui illum quam non excepturi incidunt cupiditate. Eaque ullam quibusdam adipisci esse molestias ea rerum!</p>
+            </div>
+            <div class="right-img"><img src="img/business-businessmen-classroom-267507.jpg" alt=""></div>
+
+        </section> <!--   INTRO SECTION ENDS   -->
+
+        <section id="about" class="about">
+
+            <div class="section-intro">
+                <div class="intro-content">
+                    <h2><span class="title-first">About </span> <span class="title-last">me</span></h2>
+                    <span class="bar"></span>
+                    <p class="title-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim odio odit nobis accusantium magnam facilis ex perferendis sit cupiditate. Sapiente quod consectetur nemo voluptatibus ex consequuntur exercitationem perspiciatis</p>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            
+            <div class="about-me">
+                <img src="img/jennifer-connelly1.jpg" alt="pro-pic">
+                <h1 class="about-me__title">Jennifer Connelly</h2>
+                <div class="social-media-space"></div> <!-- SOCIAL MEDIA SPACE  -->
+                <div class="about-me__content">
+                    <h2 class="about-me__designation">Designer & Developer</h2>
+                    <span class="designation-bar"></span>
+                    <p id="para-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo impedit rem eligendi necessitatibus soluta consectetur architecto sint distinctio minima porro, ullam omnis quibusdam, explicabo aut voluptatem, dolores aperiam officia saepe dolorum corrupti? Quam rerum velit unde saepe ab illo.</p>
+                    <p id="para-two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo sint nulla saepe veniam perferendis soluta commodi ut accusamus accusantium iusto, facere voluptatum cupiditate eveniet sed facilis aut quam temporibus voluptas tenetur laudantium! Commodi, ut provident, cupiditate fugit mollitia ad voluptas accusantium nam laudantium nobis qui velit architecto iure excepturi</p>
+                </div>
+            </div>
+
+        </section> <!--   ABOUT SECTION ENDS   -->
+        
+        <section id="portfolio-top" class="portfolio">
+
+            <div class="zooming-img" style="background-image: url('img/blur-cellphone-chair-912388.jpg');"></div>
+
+            <div class="section-intro">
+                <div class="intro-content">
+                    <h2><span class="title-first">My </span> <span class="title-last">Portfolio</span></h2>
+                    <span class="bar"></span>
+                    <p class="title-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim odio odit nobis accusantium magnam facilis ex perferendis sit cupiditate. Sapiente quod consectetur nemo voluptatibus ex consequuntur exercitationem perspiciatis</p>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div id="portfolio">
+
+                <div class="portfolio-showcase">
+                    <div class="featured-img"><img src="img/ballpen-blur-close-up-461077.jpg" ></div>
+                    <div class="responses">
+                        <i class="fa visitors"><a href="#">12k+</a></i>
+                        <i class="fa likes"><a href="#">2k+</a></i>
+                        <i class="fa dislikes"><a href="#">167</a></i>
+                        <i class="fa share"><a href="#">7k+</a></i>
+                    </div>
+                    <div class="description">
+                        <h3>Portfolio Title</h3>
+                        <span class="meta-data">This project was Created on 10th June 2017 for JK Industries Ltd.</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci exercitationem explicabo in quod ut placeat, quidem ipsa, iusto eum similique, labore ullam maiores excepturi est porro! Consequatur ab deserunt odio enim molestiae distinctio eius est quod! Quas, sunt sint.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div><!--  PORTFOLIO SHOWCASE  -->
+
+                <div class="portfolio-item-container">
+
+                    <div id="item1" class="portfolio-item js-trigger" >
+                        <img src="img/ballpen-blur-close-up-461077.jpg">
+                        <figcaption>
+                            <p>First Portfolio Item</p>
+                        </figcaption>
+                        <div class="portfolio-item-content">
+                            <h3>Item Name</h3>
+                            <p>This project was Created on 13th Dec 2016 for JK Industries Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione iste officia accusantium est sapiente fuga voluptatem quam laborum laudantium? Recusandae possimus, in minus aut architecto repellat vitae eligendi perspiciatis maiores ad commodi ut dignissimos dicta atque sequi adipisci laudantium?</p>
+                        </div>
+                    </div>
+
+                    <div id="item2" class="portfolio-item js-trigger">
+                        <img src="img/blur-commuter-departure-253647.jpg">
+                        <figcaption>
+                                <p>Second Portfolio Item</p>
+                        </figcaption>
+                        <div class="portfolio-item-content">
+                            <h3>Item Name</h3>
+                            <p>This project was Created on 17th Jan 2017 for JK Industries Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione iste officia accusantium est sapiente fuga voluptatem quam laborum laudantium? Recusandae possimus, in minus aut architecto repellat vitae eligendi perspiciatis maiores ad commodi ut dignissimos dicta atque sequi adipisci laudantium?</p>
+                        </div>
+                    </div>
+
+                    <div id="item3" class="portfolio-item js-trigger featured">
+                        <img src="img/blur-books-bookshelves-68763.jpg">
+                        <figcaption>
+                            <p>Third Portfolio Item</p>
+                        </figcaption>
+                        <div class="portfolio-item-content">
+                            <h3>Item Name</h3>
+                            <p>This project was Created on 02th July 2018 for JK Industries Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione iste officia accusantium est sapiente fuga voluptatem quam laborum laudantium? Recusandae possimus, in minus aut architecto repellat vitae eligendi perspiciatis maiores ad commodi ut dignissimos dicta atque sequi adipisci laudantium?</p>
+                        </div>
+                    </div>
+
+                    <div id="item4" class="portfolio-item js-trigger">
+                        <img src="img/blur-business-card-185933.jpg">
+                        <figcaption>
+                            <p>Fourth Portfolio Item</p>
+                        </figcaption>
+                        <div class="portfolio-item-content">
+                            <h3>Item Name</h3>
+                            <p>This project was Created on 23th Mar 2018 for JK Industries Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione iste officia accusantium est sapiente fuga voluptatem quam laborum laudantium? Recusandae possimus, in minus aut architecto repellat vitae eligendi perspiciatis maiores ad commodi ut dignissimos dicta atque sequi adipisci laudantium?</p>
+                         </div>
+                    </div>
+
+                    <div id="item5" class="portfolio-item js-trigger">
+                        <img src="img/beach-bird-dawn-401640.jpg">
+                        <figcaption>
+                            <p>Fifth Portfolio Item</p>
+                        </figcaption>
+                        <div class="portfolio-item-content">
+                            <h3>Item Name</h3>
+                            <p>This project was Created on 08th Aug 2018 for JK Industries Ltd.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione iste officia accusantium est sapiente fuga voluptatem quam laborum laudantium? Recusandae possimus, in minus aut architecto repellat vitae eligendi perspiciatis maiores ad commodi ut dignissimos dicta atque sequi adipisci laudantium?</p>
+                        </div>
+                    </div>
+
+                </div> <!-- PORTFOLIO ITEMS END  -->
+
+            </div> 
+
+        </section> <!--    PORTFOLIO SECTION ENDS  -->
+        
+        <section id="services" class="service">
+
+            <div class="zooming-img" style="background-image: url('img/adult-business-businessman-1061588.jpg')">
+            </div>
+
+            <div class="section-intro">
+                <div class="intro-content">
+                    <h2><span class="title-first">My </span> <span class="title-last">Services</span></h2>
+                    <span class="bar"></span>
+                    <p class="title-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim odio odit nobis accusantium magnam facilis ex perferendis sit cupiditate. Sapiente quod consectetur nemo voluptatibus ex consequuntur exercitationem perspiciatis</p>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="cards">
+
+                <div class="card first">
+                    <h3>Bug Fixing</h3>
+                    <div class="figure">
+                            <img src="img/pexels-photo-190364.jpeg" alt="">
+                            <figcaption>You only need to pay <span>$10</span></figcaption>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor iste vitae sapiente pariatur similique</p>
+                        <a href="#">Find More<span>&#10140;</span></a>
+                </div> <!-- FIRST CARD  -->
+
+                <div class="card second">
+                    <h3>Security Patches</h3>
+                    <div class="figure">
+                            <img src="img/pexels-photo-196655.jpeg" alt="">
+                            <figcaption>You only need to pay <span>$10</span></figcaption>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor iste vitae sapiente pariatur similique</p>
+                        <a href="#">Find More<span>&#10140;</span></a>
+                </div> <!-- SECOND CARD  -->
+
+                <div class="card third">
+                    <h3>Social Media</h3>
+                    <div class="figure">
+                        <img src="img/facebook-login-office-laptop-business-162622.jpeg" alt="">
+                        <figcaption>You only need to pay <span>$10</span></figcaption>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor iste vitae sapiente pariatur similique</p>
+                    <a href="#">Find More<span>&#10140;</span></a>
+                </div> <!-- THIRD CARD  -->
+
+            </div> <!-- CARDS END   -->
+
+        </section> <!--    SERVICE SECTION ENDS  -->
+        
+        <section id="projects" class="projects">
+
+            <div class="section-intro">
+                <div class="intro-content">
+                    <h2><span class="title-first">My </span> <span class="title-last">Projects</span></h2>
+                    <span class="bar"></span>
+                    <p class="title-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim odio odit nobis accusantium magnam facilis ex perferendis sit cupiditate. Sapiente quod consectetur nemo voluptatibus ex consequuntur exercitationem perspiciatis</p>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div id="slide">
+
+                <div class="slide-container">
+
+                    <div id="slide-one" class="slide" style="background-image:url(img/pexels-photo-669996.jpeg);">
+                        <div class="slide-content">
+                            <h3 id="title-one">Slide ONE</h3>
+                            <p id="swap-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iste?</p>
+                            <p id="swap-right">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a id="one" href="#" class="btn-top btn-fill">Read More</a>
+                        </div>
+                    </div> <!-- IMAGE ONE  -->
+
+                    <div id="slide-two" class="slide" style="background-image:url(img/art-artist-calligraphy-57690.jpg);">
+                        <div class="slide-content">
+                            <h3 id="title-two">Slide TWO</h3>
+                            <p id="swap-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iste?</p>
+                            <p id="swap-right">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a id="two" href="#" class="btn-top btn-fill">Read More</a>
+                        </div>
+                    </div> <!-- IMAGE TWO  -->
+
+                    <div id="slide-three" class="slide" style="background-image:url(img/pexels-photo-590037.jpeg);">
+                        <div class="slide-content">
+                            <h3 id="title-three">Slide THREE</h3>
+                            <p id="swap-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iste?</p>
+                            <p id="swap-right">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a id="three" href="#" class="btn-top btn-fill">Read More</a>
+                        </div>
+                    </div> <!-- IMAGE THREE  -->
+
+                    <div id="slide-four" class="slide" style="background-image:url(img/pexels-photo-207153.jpeg);">
+                        <div class="slide-content">
+                            <h3 id="title-four">Slide FOUR</h3>
+                            <p id="swap-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iste?</p>
+                            <p id="swap-right">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a id="four" href="#" class="btn-top btn-fill">Read More</a>
+                        </div>
+                    </div> <!-- IMAGE FOUR  -->
+
+                    <div id="slide-five" class="slide" style="background-image:url(img/architecture-bridge-building-1075839.jpg);">
+                        <div class="slide-content">
+                            <h3 id="title-five">Slide FIVE</h3>
+                            <p id="swap-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, iste?</p>
+                            <p id="swap-right">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a id="five" href="#" class="btn-top btn-fill">Read More</a>
+                        </div>
+                    </div> <!-- IMAGE FIVE  -->
+
+                </div> <!--SLIDE CONTAINER-->
+            
+            </div> <!-- SLIDE SECTION ENDS  -->
+
+        </section> <!--    PROJECT SECTION ENDS  -->
+        
+        <section id="blog" class="blog">
+            <div class="zooming-img" style="background-image: url(img/pexels-photo-1002634.jpeg);"></div>
+            
+            <div class="section">
+
+                <div class="blog-container">
+                    <h2>Blogs</h2>
+                    <div class="blog">
+                        <div class="meta-box">
+                            <span class="date"><a href="#">27</a></span>
+                            <span class="month"><a href="#">Jan</a></span>
+                            <span class="year"><a href="#">2018</a></span>
+                        </div>
+                        <a href="#"><h3 class="blog-title">Amazing Audition</h2></a>
+                        <p class="blog-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam harum sed, ullam quae odio in mollitia impedit consectetur suscipit modi? <a href="#" class="blog-para-perma">Read more...</a></p>
+                        <div class="author-area"></div>
+                    </div> <!-- BLOG ONE  -->
+
+                    <div class="blog">
+                        <div class="meta-box">
+                            <span class="date"><a href="#">13</a></span>
+                            <span class="month"><a href="#">Mar</a></span>
+                            <span class="year"><a href="#">2018</a></span>
+                        </div>
+                        <a href="#"><h3 class="blog-title">World Cup Crazy Prank!</h2></a>
+                        <p class="blog-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam harum sed, ullam quae odio in mollitia impedit consectetur suscipit modi? <a href="#" class="blog-para-perma">Read more...</a></p>
+                        <div class="author-area"></div>
+                    </div> <!-- BLOG ONE  -->
+
+                </div> <!-- BLOG AREA   -->
+
+                <div class="subs-container">
+                    <h2>Subscribe Here!</h2>
+                    <form action="">
+                        <label for="first-name">
+                            <span>First Name: </span>
+                            <input type="text" name="first-name" id="first-name">
+                        </label>
+                        <label for="last-name">
+                            <span>Last Name: </span>
+                            <input type="text" name="last-name" id="last-name">
+                        </label>
+                        <label for="e-mail">
+                            <span>E-mail: </span>
+                            <input type="email" name="e-mail" id="e-mail">
+                        </label>
+                        <input type="submit" value="Submit" id="submit-btn">
+                    </form>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat esse voluptatibus est assumenda nemo autem dignissimos suscipit odit quibusdam magnam, itaque provident in aut. Qui accusantium ad odio optio sunt.</p>
+
+                </div> <!-- SUBSCRIBE AREA  -->
+
+            </div>
+
+        </section> <!--    BLOG & SUBSCRIPTION SECTION END  -->
+
+        <section id="contact" class="contact">
+
+            <div class="zooming-img" style="background-image: url(img/pexels-photo-273222.jpeg);"></div>
+
+            <div class="section-intro">
+                <div class="intro-content">
+                    <h2><span class="title-first">Contact </span> <span class="title-last">Me</span></h2>
+                    <span class="bar"></span>
+                    <p class="title-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt enim odio odit nobis accusantium magnam facilis ex perferendis sit cupiditate. Sapiente quod consectetur nemo voluptatibus ex consequuntur exercitationem perspiciatis</p>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <label for="name"><span>Name:</span><input type="text" name="name" id="name"></label>
+                    <label for="email"><span>E-mail</span><input type="email" name="email" id="email"></label>
+                    <label for="message" style="width: auto; overflow: hidden;"><span>Message:</span>
+                        <grammarly-ghost spellcheck="false">
+                            <div data-id="f043e206-a811-5275-3b2a-9ce5699ad7ef" data-gramm_id="f043e206-a811-5275-3b2a-9ce5699ad7ef" data-gramm="gramm" data-gramm_editor="true" class="gr_ver_2" gramm="true" contenteditable="true">
+                            <span style="display: inline-block; font: 400 21.84px monospace; color: transparent; overflow: hidden; text-align: left; float: none; clear: none; box-sizing: border-box; vertical-align: baseline; white-space: pre-wrap; width: 100%; margin: 0px; padding: 0px; border: 0px; letter-spacing: normal; text-shadow: none; height: 269px;"></span>
+                            <br>
+                            </div>
+                        </grammarly-ghost>
+                        
+                        <textarea name="message" id="message" rows="10" data-gramm="true" data-txt_gramm_id="f043e206-a811-5275-3b2a-9ce5699ad7ef" data-gramm_id="f043e206-a811-5275-3b2a-9ce5699ad7ef" spellcheck="false" data-gramm_editor="true"></textarea>
+
+                        <grammarly-btn>
+                            <div class="_1BN1N Kzi1t _3OU5v _2DJZN" style="z-index: 2; transform: translate(613.922px, 384.781px);">
+                                <div class="_1HjH7">
+                                    <div title="Protected by Grammarly" class="_3qe6h">&nbsp;</div>
+                                </div>
+                            </div>
+                        </grammarly-btn>
+
+                    </label>
+                    <input type="submit" value="Send" id="send-btn">
+                </form>
+            </div>
+
+        </section> <!--    CONTACT SECTION END  -->
+
+    </main>    <!--   MAIN SECTION ENDS   -->
+
+    <footer id="footer">
+
+        <nav class="nav-bottom">
+            <ul class="bottom-ul">
+                <li class="bottom-li">
+                    <strong>Activities Online</strong>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">BitMate</a></li>
+                        <li><a href="#">Repository</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-li">
+                        <strong>Follow Up</strong>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Petrons</a></li>
+                        <li><a href="#">contact Me</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-li">
+                    <div class="newsletter">
+                        <p><span class="strong">Sing Up for the newsletter</span class="strong"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, officiis.</p>
+                        <div class="bottom-signup-area">
+                            <input type="email" placeholder="Your Email" id="bottom-singup">
+                            <button>submit</button>
+                        </div>
+                        <div class="social-media-icons"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>   <!--    FOOTER ENDS   -->
+
+    <script src="js/main.js"></script>
+    <script src="js/methodHandler.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/scrollTo.js"></script>
+
+    //  PREETTIFIER
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</body>
+</html>
